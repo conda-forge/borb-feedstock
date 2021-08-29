@@ -11,7 +11,7 @@ source:
   sha256: 8f3ef697183aa79bc8ad026763b143b0a3d8fbb0d378ffb0e7dca1613d5c72a5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,7 @@ requirements:
   run:
     - fonttools
     - lxml
-    - matplotlib
+    - matplotlib-base
     - pillow >=7.1.0
     - python >=3.6
     - python-barcode >=0.13.1
