@@ -38,8 +38,8 @@ test:
 about:
   home: https://github.com/jorisschellekens/borb
   summary: A library for reading, creating and manipulating PDF files in python.
-  license: AGPL-3.0-or-later
-  license_file: LICENSE.md
+  license: GPL-3.0-or-later
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
