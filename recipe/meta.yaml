@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - fonttools
+    - fonttools >=4.22.1
     - lxml
     - matplotlib-base
     - pillow >=7.1.0
