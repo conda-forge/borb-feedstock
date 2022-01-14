@@ -139,7 +139,9 @@ test:
     - pytest -vvv --capture=tee-sys tests
   requires:
     - matplotlib-base
+    - pandas
     - pip
+    - pytesseract
     - pytest
 
 about:
