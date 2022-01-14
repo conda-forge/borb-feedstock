@@ -81,7 +81,7 @@ test:
     - borb.pdf.canvas.operator
     - borb.pdf.canvas.operator.color
     - borb.pdf.canvas.operator.compatibility
-    - borb.pdf.canvas.operator.mark_content
+    - borb.pdf.canvas.operator.marked_content
     - borb.pdf.canvas.operator.path_construction
     - borb.pdf.canvas.operator.path_painting
     - borb.pdf.canvas.operator.state
@@ -103,7 +103,6 @@ test:
     - borb.toolkit.export.html_to_pdf.read.list
     - borb.toolkit.export.html_to_pdf.read.structure
     - borb.toolkit.export.html_to_pdf.read.table
-    
     - borb.pdf.layout
     - borb.pdf.layout.emoji
     - borb.pdf.layout.emoji.resources
