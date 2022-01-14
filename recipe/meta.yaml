@@ -132,7 +132,10 @@ test:
     - borb.toolkit.redact
     - borb.toolkit.table
     - borb.toolkit.text
-    
+  commands:
+    - pip list | grep -E '{{ name }}\s+{{ version }}'
+  requires:
+    - pip
 
 about:
   home: https://github.com/jorisschellekens/borb
