@@ -139,6 +139,7 @@ test:
     - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
+    - pytesseract
     - pytest
 
 about:
