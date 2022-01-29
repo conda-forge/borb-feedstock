@@ -34,6 +34,66 @@ test:
   imports:
     - borb
     - borb.datastructure
+    - borb.io
+    - borb.io.filter
+    - borb.io.read
+    - borb.io.read.encryption
+    - borb.io.read.font
+    - borb.io.read.function
+    - borb.io.read.image
+    - borb.io.read.metadata
+    - borb.io.read.object
+    - borb.io.read.page
+    - borb.io.read.postfix
+    - borb.io.read.primitive
+    - borb.io.read.reference
+    - borb.io.read.tokenize
+    - borb.io.write
+    - borb.io.write.ascii_art
+    - borb.io.write.document
+    - borb.io.write.image
+    - borb.io.write.object
+    - borb.io.write.page
+    - borb.io.write.primitive
+    - borb.io.write.reference
+    - borb.io.write.xmp
+    - borb.pdf
+    - borb.pdf.canvas
+    - borb.pdf.canvas.color
+    - borb.pdf.canvas.event
+    - borb.pdf.canvas.font
+    - borb.pdf.canvas.font.composite_font
+    - borb.pdf.canvas.font.composite_font.cmaps
+    - borb.pdf.canvas.font.simple_font
+    - borb.pdf.canvas.font.simple_font.afm
+    - borb.pdf.canvas.geometry
+    - borb.pdf.canvas.layout
+    - borb.pdf.canvas.layout.emoji
+    - borb.pdf.canvas.layout.emoji.resources
+    - borb.pdf.canvas.layout.forms
+    - borb.pdf.canvas.layout.hyphenation
+    - borb.pdf.canvas.layout.image
+    - borb.pdf.canvas.layout.list
+    - borb.pdf.canvas.layout.page_layout
+    - borb.pdf.canvas.layout.shape
+    - borb.pdf.canvas.layout.table
+    - borb.pdf.canvas.layout.text
+    - borb.pdf.canvas.line_art
+    - borb.pdf.canvas.operator
+    - borb.pdf.canvas.operator.color
+    - borb.pdf.canvas.operator.compatibility
+    - borb.pdf.canvas.operator.marked_content
+    - borb.pdf.canvas.operator.path_construction
+    - borb.pdf.canvas.operator.path_painting
+    - borb.pdf.canvas.operator.state
+    - borb.pdf.canvas.operator.text
+    - borb.pdf.canvas.operator.xobject
+    - borb.trailer
+    - borb.xref
+  commands:
+    - pip check | grep -E '{{ name }}\s+{{ version }}'
+  requires:
+    - pip
 
 about:
   home: https://github.com/jorisschellekens/borb
