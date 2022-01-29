@@ -133,7 +133,7 @@ test:
     - borb.toolkit.table
     - borb.toolkit.text
   commands:
-    - pip check | grep -E '{{ name }}\s+{{ version }}'
+    - pip list | grep -E '{{ name }}\s+{{ version }}'
   requires:
     - pip
 
