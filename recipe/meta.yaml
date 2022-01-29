@@ -88,8 +88,50 @@ test:
     - borb.pdf.canvas.operator.state
     - borb.pdf.canvas.operator.text
     - borb.pdf.canvas.operator.xobject
-    - borb.trailer
-    - borb.xref
+    - borb.pdf.trailer
+    - borb.pdf.xref
+    - borb.toolkit
+    - borb.toolkit.color
+    - borb.toolkit.diff
+    - borb.toolkit.export
+    - borb.toolkit.export.html_to_pdf
+    - borb.toolkit.export.html_to_pdf.read
+    - borb.toolkit.export.html_to_pdf.read.body
+    - borb.toolkit.export.html_to_pdf.read.head
+    - borb.toolkit.export.html_to_pdf.read.heading
+    - borb.toolkit.export.html_to_pdf.read.html
+    - borb.toolkit.export.html_to_pdf.read.image
+    - borb.toolkit.export.html_to_pdf.read.list
+    - borb.toolkit.export.html_to_pdf.read.structure
+    - borb.toolkit.export.html_to_pdf.read.table
+    - borb.toolkit.export.html_to_pdf.read.text
+    - borb.toolkit.export.html_to_pdf.read.text.bold
+    - borb.toolkit.export.html_to_pdf.read.text.italic
+    - borb.toolkit.export.html_to_pdf.tag_transformer
+    - borb.toolkit.export.html_to_pdf.tag_transformer.body
+    - borb.toolkit.export.html_to_pdf.tag_transformer.head
+    - borb.toolkit.export.html_to_pdf.tag_transformer.heading
+    - borb.toolkit.export.html_to_pdf.tag_transformer.image
+    - borb.toolkit.export.html_to_pdf.tag_transformer.list
+    - borb.toolkit.export.html_to_pdf.tag_transformer.structure
+    - borb.toolkit.export.html_to_pdf.tag_transformer.table
+    - borb.toolkit.export.html_to_pdf.tag_transformer.text
+    - borb.toolkit.export.html_to_pdf.tag_transformer.text.bold
+    - borb.toolkit.export.html_to_pdf.tag_transformer.text.italic
+    - borb.toolkit.export.markdown_to_pdf
+    - borb.toolkit.export.markdown_to_pdf.read
+    - borb.toolkit.export.markdown_to_pdf.read.heading
+    - borb.toolkit.export.markdown_to_pdf.read.image
+    - borb.toolkit.export.markdown_to_pdf.read.list
+    - borb.toolkit.export.markdown_to_pdf.read.table
+    - borb.toolkit.export.markdown_to_pdf.read.text
+    - borb.toolkit.image
+    - borb.toolkit.location
+    - borb.toolkit.ocr
+    - borb.toolkit.profiling
+    - borb.toolkit.redact
+    - borb.toolkit.table
+    - borb.toolkit.text
   commands:
     - pip check | grep -E '{{ name }}\s+{{ version }}'
   requires:
