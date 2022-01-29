@@ -138,6 +138,8 @@ test:
     - pip list | grep -E '{{ name }}\s+{{ version }}'
     - pytest -vvv --capture=tee-sys tests
   requires:
+    - gtts
+    - pandas
     - pip
     - pytesseract
     - pytest
