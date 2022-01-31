@@ -21,6 +21,7 @@ requirements:
     - python >=3.6
   run:
     - fonttools >=4.22.1
+    - gtts
     - lxml
     - matplotlib-base
     - pillow >=7.1.0
@@ -138,7 +139,6 @@ test:
     - pip list | grep -E '{{ name }}\s+{{ version }}'
     - pytest -vvv --capture=tee-sys tests
   requires:
-    - gtts
     - pandas
     - pip
     - pytesseract
