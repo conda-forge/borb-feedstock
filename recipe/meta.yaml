@@ -137,7 +137,7 @@ test:
     - borb.toolkit.text
   commands:
     - pip list | grep -E '{{ name }}\s+{{ version }}'
-    - pytest -vvv --capture=tee-sys -k "not bigram_part_of_speech_tagger" tests
+    - pytest -vvv --capture=tee-sys -k "not part_of_speech_tagger" tests
   requires:
     - pandas
     - pip
