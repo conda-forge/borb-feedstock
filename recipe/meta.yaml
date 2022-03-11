@@ -1,5 +1,5 @@
 {% set name = "borb" %}
-{% set version = "2.0.20" %}
+{% set version = "2.0.21" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/borb-{{ version }}.tar.gz
-  sha256: 5cd02a8c2a9bb7bb5fe36752ae78f60932bf61a15ed68c45a13813e9556496cd
+  sha256: b4546ca8f0333d7df922ddb915e0c3ded3a90edb7fce5d769b521dc086aa4094
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - python-barcode >=0.13.1
     - qrcode >=6.1
     - requests >=2.24.0
-    - setuptools
+    - setuptools >=51.1.1
 
 test:
   source_files:
