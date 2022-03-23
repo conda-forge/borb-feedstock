@@ -5,7 +5,7 @@ Home: https://github.com/jorisschellekens/borb
 
 Package license: AGPL-3.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/borb-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/borb-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library for reading, creating and manipulating PDF files in python.
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13717&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/borb-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13717&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/borb-feedstock?branchName=main">
       </a>
     </td>
   </tr>
