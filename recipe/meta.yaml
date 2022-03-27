@@ -1,5 +1,5 @@
 {% set name = "borb" %}
-{% set version = "2.0.22" %}
+{% set version = "2.0.22.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/borb-{{ version }}.tar.gz
-  sha256: 89780af6deb223eee6492df84dac2e8c6656f906def98deb6a71b53fd7d9b2e2
+  sha256: 668fa2f54fb1048e10beb3ae7647e383941ca88742c104e68c736b868f2ff19d
 
 build:
   number: 0
