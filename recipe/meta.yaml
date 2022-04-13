@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools >=51.1.1
   run:
     - fonttools >=4.22.1
     - gtts
