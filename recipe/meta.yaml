@@ -33,8 +33,6 @@ requirements:
     - setuptools >=51.1.1
 
 test:
-  source_files:
-    - tests
   imports:
     - borb
     - borb.datastructure
@@ -139,12 +137,8 @@ test:
   commands:
     - pip list | grep -E '{{ name }}\s+{{ version }}'
     # Upstream tests has errors, skip for now
-#     - pytest -vvv --capture=tee-sys tests
   requires:
-    - pandas
     - pip
-    - pytesseract
-    - pytest
 
 about:
   home: https://github.com/jorisschellekens/borb
