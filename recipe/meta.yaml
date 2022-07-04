@@ -1,5 +1,5 @@
 {% set name = "borb" %}
-{% set version = "2.0.28" %}
+{% set version = "2.0.29" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/borb-{{ version }}.tar.gz
-  sha256: 5a10ce0e6d58e6a5030aecfebaf08abab00c08d234630a9fc7d095903f0d693c
+  sha256: 30f2a414af453649bcc68a3ab4c7d305cb7db2a7ff163f866255cfb6ec68f693
 
 build:
   number: 0
@@ -33,8 +33,6 @@ requirements:
     - setuptools >=51.1.1
 
 test:
-  source_files:
-    - tests
   imports:
     - borb
     - borb.datastructure
@@ -139,12 +137,8 @@ test:
   commands:
     - pip list | grep -E '{{ name }}\s+{{ version }}'
     # Upstream tests has errors, skip for now
-#     - pytest -vvv --capture=tee-sys tests
   requires:
-    - pandas
     - pip
-    - pytesseract
-    - pytest
 
 about:
   home: https://github.com/jorisschellekens/borb
