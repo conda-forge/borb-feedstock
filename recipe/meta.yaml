@@ -1,5 +1,5 @@
 {% set name = "borb" %}
-{% set version = "2.0.32" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/borb-{{ version }}.tar.gz
-  sha256: 601d7675151a9595d4786459d9c48893ef27cc4d5dc0616adcc86bd00ff434fe
+  sha256: 8a8b510cc9732358fae1369b274a497801ddb6bd6c9533fe2b4794b82eb8805f
 
 build:
   number: 0
@@ -22,9 +22,6 @@ requirements:
     - setuptools >=51.1.1
   run:
     - fonttools >=4.22.1
-    - gtts
-    - lxml
-    - matplotlib-base
     - pillow >=7.1.0
     - python >=3.6
     - python-barcode >=0.13.1
@@ -37,106 +34,10 @@ test:
     - borb
     - borb.datastructure
     - borb.io
-    - borb.io.filter
-    - borb.io.read
-    - borb.io.read.encryption
-    - borb.io.read.font
-    - borb.io.read.function
-    - borb.io.read.image
-    - borb.io.read.metadata
-    - borb.io.read.object
-    - borb.io.read.page
-    - borb.io.read.postfix
-    - borb.io.read.primitive
-    - borb.io.read.reference
-    - borb.io.read.tokenize
-    - borb.io.write
-    - borb.io.write.ascii_art
-    - borb.io.write.document
-    - borb.io.write.image
-    - borb.io.write.object
-    - borb.io.write.page
-    - borb.io.write.primitive
-    - borb.io.write.reference
-    - borb.io.write.xmp
     - borb.pdf
-    - borb.pdf.canvas
-    - borb.pdf.canvas.color
-    - borb.pdf.canvas.event
-    - borb.pdf.canvas.font
-    - borb.pdf.canvas.font.composite_font
-    - borb.pdf.canvas.font.composite_font.cmaps
-    - borb.pdf.canvas.font.simple_font
-    - borb.pdf.canvas.font.simple_font.afm
-    - borb.pdf.canvas.geometry
-    - borb.pdf.canvas.layout
-    - borb.pdf.canvas.layout.emoji
-    - borb.pdf.canvas.layout.emoji.resources
-    - borb.pdf.canvas.layout.forms
-    - borb.pdf.canvas.layout.hyphenation
-    - borb.pdf.canvas.layout.image
-    - borb.pdf.canvas.layout.list
-    - borb.pdf.canvas.layout.page_layout
-    - borb.pdf.canvas.layout.shape
-    - borb.pdf.canvas.layout.table
-    - borb.pdf.canvas.layout.text
-    - borb.pdf.canvas.line_art
-    - borb.pdf.canvas.operator
-    - borb.pdf.canvas.operator.color
-    - borb.pdf.canvas.operator.compatibility
-    - borb.pdf.canvas.operator.marked_content
-    - borb.pdf.canvas.operator.path_construction
-    - borb.pdf.canvas.operator.path_painting
-    - borb.pdf.canvas.operator.state
-    - borb.pdf.canvas.operator.text
-    - borb.pdf.canvas.operator.xobject
-    - borb.pdf.trailer
-    - borb.pdf.xref
     - borb.toolkit
-    - borb.toolkit.color
-    - borb.toolkit.diff
-    - borb.toolkit.export
-    - borb.toolkit.export.html_to_pdf
-    - borb.toolkit.export.html_to_pdf.read
-    - borb.toolkit.export.html_to_pdf.read.body
-    - borb.toolkit.export.html_to_pdf.read.head
-    - borb.toolkit.export.html_to_pdf.read.heading
-    - borb.toolkit.export.html_to_pdf.read.html
-    - borb.toolkit.export.html_to_pdf.read.image
-    - borb.toolkit.export.html_to_pdf.read.list
-    - borb.toolkit.export.html_to_pdf.read.structure
-    - borb.toolkit.export.html_to_pdf.read.table
-    - borb.toolkit.export.html_to_pdf.read.text
-    - borb.toolkit.export.html_to_pdf.read.text.bold
-    - borb.toolkit.export.html_to_pdf.read.text.italic
-    - borb.toolkit.export.html_to_pdf.tag_transformer
-    - borb.toolkit.export.html_to_pdf.tag_transformer.body
-    - borb.toolkit.export.html_to_pdf.tag_transformer.head
-    - borb.toolkit.export.html_to_pdf.tag_transformer.heading
-    - borb.toolkit.export.html_to_pdf.tag_transformer.image
-    - borb.toolkit.export.html_to_pdf.tag_transformer.list
-    - borb.toolkit.export.html_to_pdf.tag_transformer.structure
-    - borb.toolkit.export.html_to_pdf.tag_transformer.table
-    - borb.toolkit.export.html_to_pdf.tag_transformer.text
-    - borb.toolkit.export.html_to_pdf.tag_transformer.text.bold
-    - borb.toolkit.export.html_to_pdf.tag_transformer.text.italic
-    - borb.toolkit.export.markdown_to_pdf
-    - borb.toolkit.export.markdown_to_pdf.read
-    - borb.toolkit.export.markdown_to_pdf.read.heading
-    - borb.toolkit.export.markdown_to_pdf.read.image
-    - borb.toolkit.export.markdown_to_pdf.read.list
-    - borb.toolkit.export.markdown_to_pdf.read.table
-    - borb.toolkit.export.markdown_to_pdf.read.text
-    - borb.toolkit.image
-    - borb.toolkit.location
-    - borb.toolkit.ocr
-    - borb.toolkit.profiling
-    - borb.toolkit.redact
-    - borb.toolkit.table
-    - borb.toolkit.text
   commands:
-    - pip list | grep -E '{{ name }}\s+{{ version }}'
-    # Upstream tests has errors, skip for now
+    - pip check
   requires:
     - pip
 
