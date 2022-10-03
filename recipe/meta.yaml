@@ -40,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - lxml
 
 about:
   home: https://github.com/jorisschellekens/borb
