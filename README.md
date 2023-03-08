@@ -1,11 +1,11 @@
-About borb
-==========
+About borb-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/borb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jorisschellekens/borb
 
 Package license: AGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/borb-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library for reading, creating and manipulating PDF files in python.
 
