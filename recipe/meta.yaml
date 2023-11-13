@@ -32,6 +32,9 @@ requirements:
     - requests >=2.24.0
     - setuptools >=51.1.1
 
+    # Needed but not listed upstream
+    - keyring
+
 test:
   imports:
     - borb
