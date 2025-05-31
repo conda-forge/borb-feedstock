@@ -28,7 +28,7 @@ requirements:
     - matplotlib-base
     - pillow
     - python-barcode
-    - py_avataaars
+    - py-avataaars
     - requests
     - segno
     - setuptools >=51.1.1
