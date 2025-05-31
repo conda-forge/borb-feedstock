@@ -21,27 +21,21 @@ requirements:
     - python {{ python_min }}
     - setuptools >=51.1.1
   run:
-    - cryptography >=37.0.4
-    - fonttools >=4.22.1
-    - lxml >=4.9.1
-    # pillow 9.1.0 needed for qrcode 7.4.2
-    - pillow >=9.1.0
     - python >={{ python_min }}
-    - python-barcode >=0.13.1
-    - qrcode >=6.1
-    - requests >=2.24.0
+    - black
+    - cryptography
+    - fonttools
+    - matplotlib-base
+    - pillow
+    - python-barcode
+    - py_avataaars
+    - requests
+    - segno
     - setuptools >=51.1.1
-
-    # Needed but not listed upstream
-    - keyring
 
 test:
   imports:
     - borb
-    - borb.datastructure
-    - borb.io
-    - borb.pdf
-    - borb.toolkit
   commands:
     - pip check
   requires:
