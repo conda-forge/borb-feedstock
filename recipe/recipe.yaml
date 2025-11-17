@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: borb
-  version: "3.0.2"
+  version: "3.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/borb-${{ version }}.tar.gz
-  sha256: ec520cc3a8d1090a188814139b318b8c6e5136cea50f851cb225a4e6ce1889a5
+  sha256: 7b5586cdf77f48e8f8de61b4d431a596c30e6a278bdacee8f25b65598746b644
 
 build:
   number: 0
