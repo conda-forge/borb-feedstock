@@ -24,15 +24,6 @@ requirements:
     - setuptools >=51.1.1
   run:
     - python >=${{ python_min }}
-    - black
-    - cryptography
-    - fonttools
-    - matplotlib-base
-    - pillow
-    - python-barcode
-    - py-avataaars
-    - requests
-    - segno
     - setuptools >=51.1.1
 
 tests:
