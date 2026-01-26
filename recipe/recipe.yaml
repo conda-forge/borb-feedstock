@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: borb
-  version: "3.0.3"
+  version: "3.0.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/borb-${{ version }}.tar.gz
-  sha256: 7b5586cdf77f48e8f8de61b4d431a596c30e6a278bdacee8f25b65598746b644
+  sha256: 2af403cca78c9d9047589fda62fe4aec453bd415b9d448c01c53285eec1295ef
 
 build:
   number: 0
@@ -24,15 +24,6 @@ requirements:
     - setuptools >=51.1.1
   run:
     - python >=${{ python_min }}
-    - black
-    - cryptography
-    - fonttools
-    - matplotlib-base
-    - pillow
-    - python-barcode
-    - py-avataaars
-    - requests
-    - segno
     - setuptools >=51.1.1
 
 tests:
