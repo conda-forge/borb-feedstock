@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: borb
-  version: "3.0.6"
+  version: "3.0.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/borb-${{ version }}.tar.gz
-  sha256: b8aa7df5ce7807042028536a22a01998215b8648fad7c79d415bff8f93f6b8f4
+  sha256: 772ebd942ffae6f805fc267efd61f061029d73f51fc5bb82a76ca697bbd074a8
 
 build:
   number: 0
@@ -31,7 +31,9 @@ tests:
       imports:
         - borb
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A library for reading, creating and manipulating PDF files in python.
